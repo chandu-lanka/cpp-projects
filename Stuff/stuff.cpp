@@ -3,6 +3,5 @@
 
 int main()
 {
-    Log("Menenen");
-    std::cin.get();
+    Log("Hello World");
 }
