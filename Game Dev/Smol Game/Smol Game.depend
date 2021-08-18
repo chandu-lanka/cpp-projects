@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1629189624 source:c:\users\marut\desktop\cpp-stuff\game dev\smol game\main.cpp
+1629284731 source:c:\users\marut\desktop\cpp-stuff\game dev\smol game\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 
