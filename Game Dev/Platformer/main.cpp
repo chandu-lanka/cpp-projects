@@ -9,9 +9,31 @@ int windowHeight = 300;
 
 class playerClass {
     public:
+        float x_vel;
+        float y_vel;
+
+        bool flipSprite;
+
         playerClass()
         {
+            flipSprite = true;
+            x_vel = 0;
+            y_vel = 0;
+        }
 
+        void Update(bool playerUp, bool playerDown, bool playerLeft, bool playerRight)
+        {
+            if (playerRight)
+            {
+                flipSprite = true;
+                x_vel = 5;
+            }
+
+            else if (playerLeft)
+            {
+                flipSprite = false;
+                x_vel = -5;
+            }
         }
 };
 
@@ -47,7 +69,7 @@ int main()
             right = false;
         }
 
-        cout << down << endl;
+        player.Update(up, down, left, right);
 
         // Clear screen
         app.clear();
